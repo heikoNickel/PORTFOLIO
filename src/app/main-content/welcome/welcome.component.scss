@@ -3,7 +3,6 @@ section{
     background-color: rgb(20, 29, 47);
     height: 100vh;
     color: white;
-    // background-image: url('../../../assets/img/hero-background-28.png');;
 }
 
 p{
@@ -31,21 +30,35 @@ p{
     }
 }
 
-.img-container-bow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+// .img-container-bow{
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // max-width: 1440px;
+//     height: auto;
+//     overflow: hidden; 
+//     >img{
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         object-position: center;
+//     }
+// }
+
+.hero-background{
     max-width: 1440px;
-    overflow: hidden; 
-    >img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
-// @media(max-width: 645px){
-//     .img-container-bow{ 
 
-// }
+@media(min-width: 645px){
+    .img-container-bow{ 
+        // width: 0%;
+        max-width: 1440px;
+}
+
+
+
+}
