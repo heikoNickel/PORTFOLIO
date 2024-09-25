@@ -1,0 +1,51 @@
+section{
+    margin: 0;
+    background-color: rgb(20, 29, 47);
+    height: 100vh;
+    color: white;
+    // background-image: url('../../../assets/img/hero-background-28.png');;
+}
+
+p{
+    margin: 0;
+}
+
+.img-container-profile{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 646px;
+    overflow: hidden;
+    background-image: url('../../../assets/img/photo-shadows-29.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    >img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.img-container-bow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    overflow: hidden; 
+    >img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+// @media(max-width: 645px){
+//     .img-container-bow{ 
+
+// }
