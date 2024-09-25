@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.scss'
-})
+})  
 export class WelcomeComponent {
 
 }
