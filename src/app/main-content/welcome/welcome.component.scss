@@ -45,20 +45,37 @@ p{
 //     }
 // }
 
-.hero-background{
-    max-width: 1440px;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-}
+// .hero-background{
+//     max-width: 1440px;
+//     height: auto;
+//     object-fit: cover;
+//     object-position: center;
+// }
 
 
-@media(min-width: 645px){
-    .img-container-bow{ 
-        // width: 0%;
-        max-width: 1440px;
-}
+// @media(min-width: 645px){
+//     .img-container-bow{ 
+//         // width: 0%;
+//         max-width: 1440px;
+// }}
 
+.background-image-container {
+            max-width: 1440px;
+            overflow: hidden;
+        }
 
+        .background-image-container img {
+            width: 100vw;
+            height: auto; 
+        }
 
-}
+        @media (max-width: 800px) {
+            .background-image-container {
+                height: auto;
+            }
+
+            .background-image-container img {
+                width: 100%; 
+                height: auto;
+            }
+        }
