@@ -30,56 +30,18 @@ p{
     }
 }
 
-// .img-container-bow{
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // max-width: 1440px;
-//     height: auto;
-//     overflow: hidden; 
-//     >img{
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//         object-position: center;
-//     }
-// }
-
-// .hero-background{
-//     max-width: 1440px;
-//     height: auto;
-//     object-fit: cover;
-//     object-position: center;
-// }
-
-
-// @media(min-width: 645px){
-//     .img-container-bow{ 
-//         // width: 0%;
-//         max-width: 1440px;
-// }}
 
 .background-image-container {
-            max-width: 1440px;
-            overflow: hidden;
-            position: absolute;
-            top: 200px;
-            z-index: 5;
-        }
+    max-width: 100%;
+    overflow-x: clip;
+    position: absolute;
+    top: 200px;
+    z-index: 5;
+}
 
-        // .background-image-container img {
-        //     // width: 100vw;
-        //     // height: auto; 
-        // }
-
-        @media (max-width: 665px) {
-            // .background-image-container {
-            //     height: auto;
-            // }
-
-            .background-image-container{
-                // top: 150px; 
-                width: 100%;
-                height: auto;
-            }
-        }
+@media (max-width: 665px) {
+    .background-image-container{
+        width: 100%;
+        height: auto;
+    }
+}
