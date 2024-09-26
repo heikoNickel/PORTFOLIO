@@ -1,12 +1,67 @@
+
 section{
     margin: 0;
     background-color: rgb(20, 29, 47);
     height: 100vh;
     color: white;
+    font-family: 'Poppins';
+    position: relative;
+
 }
 
 p{
     margin: 0;
+}
+
+.content-area{
+    max-width: 1440px;
+    position: relative;
+}
+
+.info-headline{
+    display: flex;
+    position: absolute;
+    right: 250px;
+    top: 250px;
+
+}
+
+.iam{
+    transform: rotate(-90deg);
+    // line-height: 52px;
+    // font-weight: 400;
+    // font-size: 52px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    >span{
+        line-height: 52px;
+        font-weight: 400;
+        font-size: 52px;
+        padding-right: 3px;
+        padding-bottom: 24px;
+    }
+}
+
+
+
+.name-title{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 46px;
+    color: #9747FF;
 }
 
 .img-container-profile{
@@ -32,11 +87,15 @@ p{
 
 
 .background-image-container {
-    max-width: 100%;
+    width: 1440px;
+    height: 100vh;
     overflow-x: clip;
     position: absolute;
     top: 200px;
     z-index: 5;
+    background-image: url("../../../assets/img/hero-background-28.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 665px) {
