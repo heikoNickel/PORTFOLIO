@@ -5,8 +5,6 @@ section{
     height: 100vh;
     color: white;
     font-family: 'Poppins';
-    position: relative;
-
 }
 
 p{
@@ -15,7 +13,10 @@ p{
 
 .content-area{
     max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
     position: relative;
+    overflow-x: clip;
 }
 
 .info-headline{
@@ -23,14 +24,12 @@ p{
     position: absolute;
     right: 250px;
     top: 250px;
-
+    z-index: 10;
+    width: 575px;
 }
 
 .iam{
     transform: rotate(-90deg);
-    // line-height: 52px;
-    // font-weight: 400;
-    // font-size: 52px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -42,8 +41,6 @@ p{
         padding-bottom: 24px;
     }
 }
-
-
 
 .name-title{
     display: flex;
@@ -85,11 +82,9 @@ p{
     }
 }
 
-
 .background-image-container {
     width: 1440px;
     height: 100vh;
-    overflow-x: clip;
     position: absolute;
     top: 200px;
     z-index: 5;
@@ -98,9 +93,91 @@ p{
     background-size: cover;
 }
 
+@media (max-width: 1300px) {
+    .info-headline{
+        right: 90px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .info-headline{
+        right: 70px;
+        top: 680px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .info-headline{
+        top: 680px;
+        right: 70px;
+    }
+}
+
 @media (max-width: 665px) {
+    .img-container-profile{
+        width: 480px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
     .background-image-container{
         width: 100%;
-        height: auto;
+        top: 85px;
+    }
+    .info-headline{
+        width: 400px;
+        right: 48%;
+        transform: translateX(42%);
+        top: 510px;
+    }
+    .iam{
+        >span{
+            line-height: 34px;
+            font-size: 34px;
+        }
+    }
+    .name{
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 46px;
+    }
+    .title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-container-profile{
+        width: 320px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .background-image-container{
+        width: 100%;
+        top: -70px;
+        // height: auto;
+    }
+    .info-headline{
+        width: 300px;
+        right: 48%;
+        transform: translateX(42%);
+        top: 340px;
+    }
+    .iam{
+        >span{
+            line-height: 0px;
+            font-size: 26px;
+        }
+    }
+    .name{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .title{
+        font-size: 23px;
+        line-height: 23px;
     }
 }
