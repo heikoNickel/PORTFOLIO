@@ -62,20 +62,24 @@ p{
 .background-image-container {
             max-width: 1440px;
             overflow: hidden;
+            position: absolute;
+            top: 200px;
+            z-index: 5;
         }
 
-        .background-image-container img {
-            width: 100vw;
-            height: auto; 
-        }
+        // .background-image-container img {
+        //     // width: 100vw;
+        //     // height: auto; 
+        // }
 
-        @media (max-width: 800px) {
-            .background-image-container {
-                height: auto;
-            }
+        @media (max-width: 665px) {
+            // .background-image-container {
+            //     height: auto;
+            // }
 
-            .background-image-container img {
-                width: 100%; 
+            .background-image-container{
+                // top: 150px; 
+                width: 100%;
                 height: auto;
             }
         }
