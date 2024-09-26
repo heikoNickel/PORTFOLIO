@@ -19,13 +19,31 @@ p{
     overflow-x: clip;
 }
 
-.info-headline{
-    display: flex;
+.info-wrapper{
     position: absolute;
     right: 250px;
     top: 250px;
     z-index: 10;
     width: 575px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >button{
+        width: 165px;
+        height: 58px;
+        background-color: #70E61C;
+        border-radius: 10px;
+        font-size: 23px;
+        color: white;
+        line-height: 27.6px;
+        padding: 15px 30px;
+        margin-top: 20px;
+    }
+
+}
+
+.info-headline{
+    display: flex;
 }
 
 .iam{
@@ -94,20 +112,20 @@ p{
 }
 
 @media (max-width: 1300px) {
-    .info-headline{
+    .info-wrapper{
         right: 90px;
     }
 }
 
 @media (max-width: 1150px) {
-    .info-headline{
+    .info-wrapper{
         right: 70px;
         top: 680px;
     }
 }
 
 @media (max-width: 1090px) {
-    .info-headline{
+    .info-wrapper{
         top: 680px;
         right: 70px;
     }
@@ -124,11 +142,19 @@ p{
         width: 100%;
         top: 85px;
     }
-    .info-headline{
+
+    .info-wrapper{
         width: 400px;
-        right: 48%;
+        right: 50%;
         transform: translateX(42%);
         top: 510px;
+        >button{
+            width: 130px;
+            height: 50px;
+            font-size: 21px;
+            padding: 8px 16px;
+        }
+    
     }
     .iam{
         >span{
@@ -136,10 +162,12 @@ p{
             font-size: 34px;
         }
     }
+
     .name{
         font-weight: 700;
         font-size: 46px;
         line-height: 46px;
+    
     }
     .title{
         font-size: 32px;
@@ -159,7 +187,7 @@ p{
         top: -70px;
         // height: auto;
     }
-    .info-headline{
+    .info-wrapper{
         width: 300px;
         right: 48%;
         transform: translateX(42%);
