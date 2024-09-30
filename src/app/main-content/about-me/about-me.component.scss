@@ -1,11 +1,142 @@
 section{
     margin: 0;
-    background-color: rgb(28, 39, 60);
-    height: 100vh;
+    padding-bottom: 50px;
+    background-color: #141d2f;
+    width: 100%;
+    // height: 80vh;
     color: white;
     position: relative;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.content-area{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: clip;
+    display: flex;
+    justify-content: space-between;
+}
+
+.background-image{
+    width: 570px;
+    height: 608px;
+    position: absolute;
+    right: -300px;
+    top: -170px;
+    z-index: 9;
 }
 
 p{
     margin: 0;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 72px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.about-me{
+    max-width: 500px;
+    padding-left: 50px;
+    z-index: 11;
+    >p{
+        padding-bottom: 20px;
+    }
+}
+
+.logo-text{
+    display: flex;
+    padding: 10px 0px;
+    >.icon-wrapper{
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        transition: transform 0.2s ease;
+        >img{
+            width: 48px;
+            height: 48px;
+        }
+    }
+    >p{
+        margin-left: 10px;
+    }
+}
+
+.icon-wrapper:hover{
+    transform: scale(1.4);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    >.profile-img{
+        border: 4px solid #70e61c;
+        width: 100%;
+        height: auto;
+        border-radius: 275px;
+        z-index: 11;
+        margin-left: 20px;
+    }
+    >.line-img{
+        z-index: 11;
+        width: auto;
+        height: 4px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .line-img{
+        width: 150px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .profile{
+        justify-content: space-around;
+        >.profile-img{
+            width: 80%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .profile-img{
+        display: none;
+    }
+    .line-img{
+        display: none;
+    }
+}
+
+@media (max-width: 735px) {
+    h2{
+        font-size: 52px;
+    }
+    .background-image{
+        right: -400px;
+    }
+    .content-area{
+        justify-content: center;
+    }
+    .about-me{
+        padding-left: 0;
+        margin: 0 15px;
+        >p{
+            text-align: justify;
+        }
+    }
+    h2{
+        text-align: center;
+    }
+    .line-img{
+        display: none;
+    }
 }
