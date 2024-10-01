@@ -1,1 +1,42 @@
-<p>skills works!</p>
+<!-- <p>skills works!</p> -->
+<section>
+
+    <div class="content-area">
+        <div class="skills-wrapper-mobile">
+            <div class="skills-text-mobile">
+                <h2>My skills</h2>
+                <p>I have gained experience in building projects with different frontend technologies and concepts.</p>
+            </div>
+            <div class="purple-line">
+                <img src="./assets/img/my-skills/purple-line.png" alt="">
+            </div>
+        </div>
+        <div class="skills-icons">
+            @for(item of icons; track $index){
+                <div class="singleIcon">
+                    <div class="icon-wrapper"><img src="{{ item.icon }}" alt=""></div>
+                    <div class="text-wrapper">{{ item.description }}</div>
+                </div>
+            }
+        </div>
+        <div class="call-to-action-mobile">
+            <h3>Looking for <span class="purple">another skill</span>?</h3>
+            <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+            <button>Get in touch!</button>
+        </div>
+        <div class="skills-wrapper">
+            <div class="skills-text">
+                <h2>My skills</h2>
+                <p>I have gained experience in building projects with different frontend technologies and concepts.</p>
+                <div class="call-to-action">
+                    <h3>Looking for <span class="purple">another skill</span>?</h3>
+                    <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+                    <button>Get in touch!</button>
+                </div>
+            </div>
+            <div class="purple-line">
+                <img src="./assets/img/my-skills/purple-line.png" alt="">
+            </div>
+        </div>
+    </div>    
+</section>
