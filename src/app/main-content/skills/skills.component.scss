@@ -9,6 +9,14 @@ section{
     font-family: 'Poppins';
 }
 
+.background-image{
+    width: 420px;
+    height: 950px;
+    position: absolute;
+    left: -80px;
+    bottom: -660px;
+}
+
 .content-area{
     padding-top: 50px;
     max-width: 1440px;
@@ -44,6 +52,7 @@ h3{
     gap: 80px;
     padding-left: 50px;
     padding-top: 25px;
+    z-index: 10;
 }
 
 .icon-wrapper{
@@ -161,6 +170,10 @@ h3{
     h3{
         text-align: center;
     }
+    .background-image{
+        left: -180px;
+        bottom: -340px;
+    }
     .skills-wrapper{
         display: none;
     }
@@ -187,4 +200,11 @@ h3{
         width: 40px;
         height: 4px;
     }
+}
+
+@media(max-width: 440px){
+    .background-image{
+        left: -180px;
+        bottom: -200px;
+    } 
 }
