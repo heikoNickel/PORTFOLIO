@@ -50,6 +50,7 @@ h2{
 .single-project{
     display: flex;
     justify-content: center;
+    gap: 50px;
     >.img-container{
         height: auto;
         width: 550px;
@@ -62,6 +63,18 @@ h2{
         height: auto;
         width: 40%;
         padding-top: 100px;
+        >.name{
+            color: #9747ff;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        >.skills{
+            color: #70e61C;
+            font-size: 23px;
+        }
+        >.description{
+            padding-right: 20px;
+        }
     }
 }
 
@@ -84,18 +97,25 @@ h2{
     .line-short{
         width: 50px;
     }
+    .single-project{
+        gap: 25px;
+    }
 }
 
 @media(max-width: 700px){
     .single-project{
         flex-direction: column;
         align-items: center;
+        gap: 0px;
         >.img-container{
             width: 80%;
         }
         >.project-infos{
             padding-top: 0px;
             width: 80%;
+            >.description{
+                padding-right: 0px;
+            }
         }
     }    
 }
@@ -106,7 +126,6 @@ h2{
             width: calc(90% - 20px);
         }
     }
-    
     .headline{
         width: 90%
     }    
