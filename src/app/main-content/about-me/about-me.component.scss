@@ -7,6 +7,7 @@ section{
     position: relative;
     color: white;
     font-family: 'Poppins';
+    overflow-x: clip;
 }
 
 .content-area{
@@ -14,7 +15,7 @@ section{
     width: 100%;
     margin: 0 auto;
     position: relative;
-    overflow-x: clip;
+    // overflow-x: clip;
     display: flex;
     justify-content: space-between;
 }
