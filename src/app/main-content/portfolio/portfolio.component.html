@@ -10,21 +10,23 @@
             </div>
             <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
         </div>
+        @for(item of project; track $index){
         <div class="single-project">
             <div class="img-container">
-                <img src="./assets/img/portfolio/join.png" alt="">
+                <img src= "{{ item.img }}" alt="">
             </div>
-                <div class="project-infos">
-                    <!-- <div class="position-wrapper"> -->
-                    <div class="name">Join</div>
-                    <div class="skills">Angular | TypeScript | HTML | CSS | Firebase</div>
-                    <div class="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </div>
-                    <div class="buttons">
-                        <button>Live test</button>
-                        <button>Github</button>
-                    </div>
-                    <!-- </div> -->
+            <div class="project-infos">
+                <div class="name">{{ item.name }}</div>
+                <div class="skills">{{ item.skills }}
+                </div>
+                <div class="description">{{ item.description }}</div>
+                <div class="buttons">
+                    <button class="live">Live test</button>
+                    <button class="github">Github</button>
                 </div>
             </div>
-         </div>    
+        </div>
+        }
+        <img class="background-image" src="./assets/img/portfolio/purple-shadow-portfolio.png" alt="">
+    </div>    
 </section>

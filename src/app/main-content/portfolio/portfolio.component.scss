@@ -9,6 +9,14 @@ section{
     font-family: 'Poppins';
 }
 
+.background-image{
+    // width: 420px;
+    // height: 950px;
+    position: absolute;
+    left: -300px;
+    bottom: -200px;
+    z-index: 2;
+}
 
 .content-area{
     max-width: 1440px;
@@ -50,10 +58,12 @@ h2{
 .single-project{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     gap: 50px;
     >.img-container{
         height: auto;
         width: 550px;
+        z-index: 3;
         >img{
             width: 100%;
             height: auto;
@@ -63,23 +73,73 @@ h2{
         height: auto;
         width: 40%;
         padding-top: 100px;
+        z-index: 3;
         >.name{
             color: #9747ff;
             font-size: 32px;
             font-weight: 700;
+            padding-bottom: 12px;
+            z-index: 3;
         }
         >.skills{
             color: #70e61C;
             font-size: 23px;
+            padding-bottom: 12px;
         }
         >.description{
             padding-right: 20px;
+        }
+        >.buttons{
+            padding-top: 24px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 32px;
+            >button{
+                height: 40px;
+                width: 92px;
+                border: 1px solid black;
+                border-radius: 10px;
+                font-size: 18px;
+                color: white;
+            }
+            .live{
+                background-color: #9747FF;
+            }
+            .github{
+                background-color: transparent;
+                border-color: #70e61C;
+            }
+        }
+    }
+}
+
+.single-project:nth-child(odd){
+    flex-direction: row-reverse;
+    >.project-infos{
+        >.name{
+            text-align: end;
+        }
+        >.skills{
+            text-align: end;
+        }
+        >.description{
+            padding-left: 20px;
+            padding-right: 0px;
+            text-align: end;
+        }
+        >.buttons{
+            justify-content: end;
         }
     }
 }
 
 @media(max-width: 950px){
+    .background-image{
+        left: -550px;
+    }
+    
     .single-project{
+        padding-bottom: 70px;
         >.img-container{
             height: auto;
             width: 400px;
@@ -103,7 +163,7 @@ h2{
 }
 
 @media(max-width: 700px){
-    .single-project{
+    .single-project, .single-project:nth-child(odd){
         flex-direction: column;
         align-items: center;
         gap: 0px;
@@ -113,14 +173,34 @@ h2{
         >.project-infos{
             padding-top: 0px;
             width: 80%;
+            margin-top: -60px;
+            >.name{
+                text-align: center;
+            }
+            >.skills{
+                text-align: center;
+            }
             >.description{
                 padding-right: 0px;
+                padding-left: 0px;
+                text-align: center;
+            }
+            >.buttons{
+                justify-content: center;
             }
         }
+    }   
+    .background-image{
+        bottom: 0px;
     }    
 }
 
 @media(max-width: 500px){
+    .single-project, .single-project:nth-child(odd){
+        >.img-container{
+            width: 100%;
+        }
+    }
     .headline-wrapper{
         >p{
             width: calc(90% - 20px);
@@ -131,6 +211,9 @@ h2{
     }    
     .line-short{
         width: 24px;
+    }
+    .background-image{
+        bottom: 75px;
     }
 }
 
