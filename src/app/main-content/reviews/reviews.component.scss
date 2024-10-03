@@ -17,13 +17,15 @@ section{
     position: relative;
     display: flex;
     justify-content: center;
+    overflow-x: clip;
+    box-sizing: border-box;
 }
 
 .review-wrapper {
     display: flex;
     max-width: 1200px;
     gap: 40px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -32,11 +34,12 @@ section{
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 2; 
-    max-width: 65%; 
+    max-width: 75%; 
     height: auto;
     border: 4px solid #70e61C;
     border-radius: 30px;
     padding: 20px 50px;
+    box-sizing: border-box;
 }
 
 .name-container {
@@ -49,76 +52,139 @@ section{
         flex-grow: 1;
     }
     > .name {
-        white-space: nowrap;
+        // white-space: nowrap;
         position: relative;
     }
 }
 
+// .profile {
+//     display: flex;
+//     align-items: center;
+//     // flex-grow: 1; 
+//     // justify-content: flex-start;
+//     > .profile-img {
+//         border: 4px solid #9E4FFF;
+//         max-width: 230px; 
+//         height: auto; 
+//         border-radius: 50%; 
+//         object-fit: cover;
+//         z-index: 11;
+//         padding: 10px;
+//     }
+//     > .image-line {
+//         height: 4px;
+//         background-color: #9E4FFF;
+//         flex-grow: 1;
+//         width: 100%; 
+//         transition: width 0.3s ease;
+//     }
+// }
+
+// .image-line {
+//     height: 4px;
+//     background-color: #9E4FFF;
+//     flex-grow: 1;
+//     width: 100%; /* Standardbreite der Linie */
+//     transition: width 0.3s ease;
+// }
+
 .profile {
     display: flex;
     align-items: center;
-    // flex-grow: 1; 
-    // justify-content: flex-start;
-    > .profile-img {
-        border: 4px solid #9E4FFF;
-        max-width: 230px; 
-        height: auto; 
-        border-radius: 50%; 
-        object-fit: cover;
-        z-index: 11;
-        padding: 10px;
-    }
-    > .image-line {
-        height: 4px;
-        background-color: #9E4FFF;
-        flex-grow: 1;
-        width: 100%; 
-        transition: width 0.3s ease;
-    }
+    position: relative; /* Wichtig für die Linie */
+    // flex-grow: 1;
+}
+
+.profile-img {
+    border: 4px solid #9E4FFF;
+    width: 100%; /* Bild passt sich jetzt an die Breite an */
+    max-width: 230px; 
+    height: auto;
+    border-radius: 50%; 
+    object-fit: cover;
+    z-index: 11;
+    padding: 10px;
 }
 
 .image-line {
     height: 4px;
+    width: 100%;
     background-color: #9E4FFF;
     flex-grow: 1;
-    width: 100%; /* Standardbreite der Linie */
+    position: absolute;
+    top: 50%; /* Zentriert die Linie vertikal */
+    left: 100%; /* Positioniert die Linie rechts neben dem Bild, mit Abstand */
+    right: 0; /* Die Linie reicht jetzt bis zum Rand des Bildschirms */
+    transform: translateY(-50%); /* Vertikale Zentrierung fixieren */
     transition: width 0.3s ease;
 }
 
 /* Media Queries für kleinere Bildschirme */
-@media (max-width: 768px) {
-    .review-wrapper {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+@media (max-width: 1350px) {
+    .review-wrapper{
+        max-width: 950px;
     }
-
     .review-frame {
-        max-width: 90%; /* Textbereich nimmt mehr Platz ein */
-        padding: 20px;
-        font-size: 1rem;
+        max-width: 68%;
     }
+}
 
-    .profile {
-        width: 100%;
-        align-items: center;
-        > .profile-img {
-            width: 120px; /* Bild verkleinern */
-            height: 120px;
+@media (max-width: 1050px) {
+    .review-wrapper{
+        max-width: 830px;
+    }
+    .review-frame {
+        max-width: 67%;
+    }
+    .profile{
+        >img{
+            max-width: 200px;
         }
     }
 }
 
-@media (max-width: 480px) {
-    .review-frame {
-        padding: 10px;
-        font-size: 0.9rem;
+@media (max-width: 920px) {
+    .review-wrapper{
+        max-width: 700px;
     }
-
-    .profile {
-        > .profile-img {
-            width: 100px; /* Weiteres Verkleinern des Bildes */
-            height: 100px;
+    .review-frame {
+        max-width: 61%;
+    }
+    .profile{
+        >img{
+            max-width: 200px;
         }
     }
+}
+
+@media (max-width: 820px) {
+    .review-wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+        max-width: 100%;
+    }
+    .review-frame {
+        height: 250px;
+        margin: 0 20px;
+        max-width: 100%;
+    }
+    .image-line{
+        width: 150%;
+    }
+}
+
+@media (max-width: 550px) {
+    .review-frame {
+        padding: 15px 25px;
+    }
+    .review-text{
+        line-height: 1.25;
+    }
+}
+
+@media (max-width: 420px) {
+    .line{
+        display: none;
+    }
+
 }
