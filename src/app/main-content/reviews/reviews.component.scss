@@ -1,0 +1,124 @@
+section{
+    margin: 0;
+    padding-bottom: 50px;
+    background-color: #141d2f;
+    width: 100%;
+    color: white;
+    position: relative;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.content-area{
+    padding-top: 50px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.review-wrapper {
+    display: flex;
+    max-width: 1200px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2; 
+    max-width: 65%; 
+    height: auto;
+    border: 4px solid #70e61C;
+    border-radius: 30px;
+    padding: 20px 50px;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+    > .line {
+        height: 4px;
+        background-color: #9E4FFF;
+        margin-right: 20px;
+        flex-grow: 1;
+    }
+    > .name {
+        white-space: nowrap;
+        position: relative;
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    // flex-grow: 1; 
+    // justify-content: flex-start;
+    > .profile-img {
+        border: 4px solid #9E4FFF;
+        max-width: 230px; 
+        height: auto; 
+        border-radius: 50%; 
+        object-fit: cover;
+        z-index: 11;
+        padding: 10px;
+    }
+    > .image-line {
+        height: 4px;
+        background-color: #9E4FFF;
+        flex-grow: 1;
+        width: 100%; 
+        transition: width 0.3s ease;
+    }
+}
+
+.image-line {
+    height: 4px;
+    background-color: #9E4FFF;
+    flex-grow: 1;
+    width: 100%; /* Standardbreite der Linie */
+    transition: width 0.3s ease;
+}
+
+/* Media Queries für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .review-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .review-frame {
+        max-width: 90%; /* Textbereich nimmt mehr Platz ein */
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .profile {
+        width: 100%;
+        align-items: center;
+        > .profile-img {
+            width: 120px; /* Bild verkleinern */
+            height: 120px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .review-frame {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .profile {
+        > .profile-img {
+            width: 100px; /* Weiteres Verkleinern des Bildes */
+            height: 100px;
+        }
+    }
+}
