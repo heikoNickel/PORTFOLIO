@@ -1,21 +1,33 @@
 <!-- <p>reviews works!</p> -->
 <section>
     <div class="content-area">
-        <div class="review-wrapper">
-            <div class="review-frame">
-                <div class="review-text">
-                    Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.
+        <div class="review-control-wrapper">
+            <div class="review-wrapper">
+                <div class="review-frame">
+                    <div class="review-text">
+                    <!-- Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment. -->
+                     {{ currentReview.review }}
+                     <br><br>
+                    </div>
+                    <div class="name-container">
+                        <div class="line"></div>
+                        <span class="name"> {{ currentReview.name }} - {{ currentReview.title }}</span>
+                    </div>
                 </div>
-                <div class="name-container">
-                    <div class="line"></div>
-                    <span class="name">N.Schuster - Frontend Developer</span>
+                <div class="profile">
+                    <img class="profile-img" src="./assets/img/reviews/woman.png" alt="">
+                    <div class="image-line"></div> 
                 </div>
             </div>
-            <div class="profile">
-                <img class="profile-img" src="./assets/img/reviews/woman.png" alt="">
-                <div class="image-line"></div> <!-- Linie rechts neben dem Bild -->
+            <div class="review-control">
+                <img (click)="decreaseIndex()" src="./assets/img/reviews/review-left.png" alt="">
+                <div class="indicators">
+                    @for(element of review; track $index){
+                        <div class="indicator" [class.active]="$index === currentIndex"></div>
+                    }
+                </div>
+                <img (click)="increaseIndex()" src="./assets/img/reviews/review-right.png" alt="">
             </div>
-
         </div>
     </div>
 </section>
