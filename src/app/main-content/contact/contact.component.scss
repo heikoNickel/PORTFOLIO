@@ -1,0 +1,138 @@
+section{
+    margin: 0;
+    padding-bottom: 50px;
+    background-color: #141d2f;
+    width: 100%;
+    color: white;
+    position: relative;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.content-area{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: clip;
+    box-sizing: border-box;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 72px;
+    margin: 0;
+    text-align: end;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+    text-align: start;
+    padding-bottom: 15px;
+}
+
+.title-container {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px; /* maximale Breite des Containers */
+}
+
+.title-line {
+    flex-grow: 1;
+    height: 4px;
+    width: 100%;
+    background-color: #a56fff;
+    margin-right: 25px;
+}
+
+.contact-container{
+    padding-top: 50px;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    box-sizing: border-box;
+}
+
+.problem-solve{
+    max-width: 40%;
+    padding-left: 50px;
+}
+
+.contact-form{
+    padding-right: 50px;
+    border-radius: 10px;
+    max-width: 60%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >input{
+        width: 94%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #a56fff;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+    }
+    >textarea{
+        width: 94%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #a56fff;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+    }
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color: white;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form label {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.contact-form label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form a {
+    color: #a56fff;
+    text-decoration: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #cfcfcf;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #b5b5b5;
+}
+
+
