@@ -4,6 +4,7 @@
         <div class="review-control-wrapper">
             <div class="review-wrapper">
                 <div class="review-frame">
+                    <div class="apostroph"><img src="./assets/img/reviews/purple_apostroph.png" alt=""></div>
                     <div class="review-text">
                     <!-- Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment. -->
                      {{ currentReview.review }}
@@ -15,7 +16,7 @@
                     </div>
                 </div>
                 <div class="profile">
-                    <img class="profile-img" src="./assets/img/reviews/woman.png" alt="">
+                    <img class="profile-img" src="{{ currentReview.img }}" alt="">
                     <div class="image-line"></div> 
                 </div>
             </div>
@@ -30,4 +31,5 @@
             </div>
         </div>
     </div>
+    
 </section>

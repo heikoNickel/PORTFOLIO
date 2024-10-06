@@ -7,6 +7,7 @@ section{
     position: relative;
     color: white;
     font-family: 'Poppins';
+    overflow-x: clip;
 }
 
 .background-image{
@@ -15,6 +16,15 @@ section{
     position: absolute;
     left: -300px;
     bottom: -200px;
+    z-index: 2;
+}
+
+.background-image-green{
+    // width: 420px;
+    // height: 950px;
+    position: absolute;
+    right: -360px;
+    bottom: -400px;
     z-index: 2;
 }
 
@@ -158,6 +168,10 @@ h2{
     }
     .single-project{
         gap: 25px;
+    }
+    .background-image-green{
+        right: -390px;
+        bottom: -470px;
     }
 }
 
