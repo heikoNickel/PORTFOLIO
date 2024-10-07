@@ -42,7 +42,7 @@ h3{
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1440px; /* maximale Breite des Containers */
+    max-width: 1440px; 
 }
 
 .title-line {
@@ -69,31 +69,101 @@ h3{
 
 .contact-form{
     padding-right: 50px;
+    margin-right: 50px;
     border-radius: 10px;
-    max-width: 60%;
-    width: 100%;
     box-sizing: border-box;
+    >.input-wrapper{
+        width: 100%;
+        position: relative;
+        >input{
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #a56fff;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #fff;
+        }
+        >img{
+            position: absolute;
+            right: -20px;
+            top: 50%; 
+            transform: translateY(-50%); 
+        }
+    }
+    >.message-wrapper{
+        width: 100%;
+        position: relative;
+        >textarea{
+            font-family: 'Poppins';
+            font-size: 13px;
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #a56fff;
+            border-radius: 5px;
+            background-color: transparent;
+            color: #fff;
+            position: relative;
+        }
+        >img{
+            position: absolute;
+            top: 12px;
+            right: -20px;
+        }
+    }
+    >label{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        >.checkbox-wrapper{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            >.privacy{
+                font-size: 14px;
+                padding-top: 5px;
+            }
+            >.checkbox{
+                width: 20px;
+                height: 20px;
+                margin-right: 15px;
+                >input {
+                    -webkit-appearance: none; 
+                    -moz-appearance: none; 
+                    appearance: none;
+                    width: 100%;
+                    height: 100%;
+                    border: 3px solid #70e61C; 
+                    border-radius: 4px;
+                    position: relative; 
+                }
+                >input::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 23px; 
+                    height: 23px;
+                    background-image: url('../../../assets/img/contact/checked.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    transform: translate(-50%, -50%);
+                    opacity: 0; 
+                    transition: opacity 0.2s ease-in-out; 
+                  }
+                  >input:checked::after {
+                    opacity: 1;
+                  }
+            }
+        }
+    }
+}
+
+
+.button-wrapper{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    >input{
-        width: 94%;
-        padding: 15px;
-        margin-bottom: 15px;
-        border: 1px solid #a56fff;
-        border-radius: 5px;
-        background-color: transparent;
-        color: #fff;
-    }
-    >textarea{
-        width: 94%;
-        padding: 15px;
-        margin-bottom: 15px;
-        border: 1px solid #a56fff;
-        border-radius: 5px;
-        background-color: transparent;
-        color: #fff;
-    }
+    justify-content: center;
+    transform: translateX(15px);
 }
 
 .contact-form input::placeholder, .contact-form textarea::placeholder{
@@ -109,7 +179,6 @@ h3{
     display: flex;
     align-items: center;
     color: #fff;
-    font-size: 0.9rem;
 }
 
 .contact-form label input[type="checkbox"] {
@@ -122,12 +191,13 @@ h3{
 }
 
 .contact-form button {
-    width: 100%;
+    width: 253px;
     padding: 15px;
+    font-size: 23px;
     background-color: #cfcfcf;
     border: none;
     border-radius: 5px;
-    color: #333;
+    color: white;
     cursor: pointer;
 }
 
@@ -135,4 +205,42 @@ h3{
     background-color: #b5b5b5;
 }
 
+.name-error, .email-error, .message-error, .privacy-error{
+    margin: 3px 0 3px 0;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: red;
+    text-align: left;
+    width: 100%;
+    visibility: hidden;
+}
 
+@media(max-width:1050px){
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .problem-solve{
+        padding-left: 0;
+        max-width: 80%;
+        >h3{
+            text-align: center;
+        }
+        >p{
+            text-align: center;
+        } 
+    }
+    .contact-form{
+        padding-left: 15px;
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 800px){
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 19px;
+    }
+}

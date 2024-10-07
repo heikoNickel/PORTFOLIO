@@ -13,14 +13,20 @@
                 <p>Need a Frontend developer? <b>Contact me!</b></p>
             </div>
             <div class="contact-form">
-                <input type="text" placeholder="Your name" required>
-                <input type="email" placeholder="Your email" required>
-                <textarea placeholder="Your message" required></textarea>
+                <div class="input-wrapper"><input class="name" type="text" placeholder="Your name" required ><img src="./assets/img/contact/input-ok.png" alt=""></div>
+                <div class="name-error">Your name is required</div>
+                <div class="input-wrapper"><input class="email" type="email" placeholder="Your email" required><img src="./assets/img/contact/input-ok.png" alt=""></div>
+                <div class="email-error">Your email is required</div>
+                <div class="message-wrapper"><textarea class="text" placeholder="Your message" required></textarea><img src="./assets/img/contact/input-ok.png" alt=""></div>
+                <div class="message-error">Messagetext is required</div>
                 <label>
-                    <input type="checkbox" required>
-                    <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</span>
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox"><input type="checkbox" required></div>
+                        <div class="privacy">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</div>
+                    </div>
+                    <span class="privacy-error">Please accept the privacy policy</span>
                 </label>
-                <button type="submit">Send message :)</button>
+                <div class="button-wrapper"><button type="submit">Send message :)</button></div>
             </div>
         </div>
     </div>
