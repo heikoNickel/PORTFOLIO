@@ -54,7 +54,7 @@ h2{
 }
 
 .headline{
-    padding-top: 50px;
+    padding-top: 75px;
     width: 66%;
     display: flex;
     align-items: center;
@@ -162,6 +162,9 @@ h2{
 @media(max-width: 800px){
     h2{
         font-size: 40px;
+    }
+    .headline{
+        padding-top: 100px;
     }
     .line-short{
         width: 50px;

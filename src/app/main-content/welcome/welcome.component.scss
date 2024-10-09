@@ -2,7 +2,7 @@
 section{
     margin: 0;
     background-color: rgb(20, 29, 47);
-    height: 100vh;
+    height: calc(100vh - 100px);
     color: white;
     font-family: 'Poppins';
 }
@@ -12,6 +12,8 @@ p{
 }
 
 .content-area{
+    padding-top: 100px;
+    // margin-bottom: 50px;
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
@@ -24,7 +26,7 @@ p{
     position: absolute;
     right: 250px;
     top: 250px;
-    z-index: 10;
+    z-index: 15;
     width: 575px;
     display: flex;
     flex-direction: column;
@@ -39,7 +41,13 @@ p{
         line-height: 27.6px;
         padding: 15px 30px;
         margin-top: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out
     }
+    >button:hover{
+        background-color: #a56fff;
+        transform: scale(1.2);
+    } 
 
 }
 
@@ -103,7 +111,7 @@ p{
 
 .background-image-container {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     position: relative;
 }
 
@@ -120,7 +128,7 @@ p{
     width: 100%;
     justify-content: space-between;
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
 }
 
 .social{
@@ -176,14 +184,13 @@ p{
     .info-wrapper{
         width: 400px;
         right: 150px;
-        top: 510px;
+        top: 580px;
         >button{
             width: 130px;
             height: 50px;
             font-size: 21px;
             padding: 8px 16px;
             margin-left: 40px;
-        }   
     }
     .iam{
         >span{
@@ -200,6 +207,7 @@ p{
         font-size: 32px;
         line-height: 32px;
     }
+}
 }
 
 @media (max-width: 735px) {
@@ -237,11 +245,10 @@ p{
     .info-wrapper{
         width: 300px;
         transform: translateX(42%);
-        top: 340px;
+        top: 440px;
         >button{
             margin-left: 30px;
         }
-    }
     .iam{
         >span{
             line-height: 0px;
@@ -257,7 +264,9 @@ p{
         font-size: 23px;
         line-height: 23px;
     }
+    }
     .scroll{
         padding-right: 15px;
     }
 }
+

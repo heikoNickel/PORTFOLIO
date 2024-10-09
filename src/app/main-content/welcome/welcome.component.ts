@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './welcome.component.scss'
 })  
 export class WelcomeComponent {
-
+  scrollToSection(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }

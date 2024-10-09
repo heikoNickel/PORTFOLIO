@@ -38,7 +38,7 @@ h3{
 }
 
 .title-container {
-    padding-top: 50px;
+    padding-top: 75px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -175,11 +175,6 @@ textarea:focus {
 .message-wrapper textarea.ng-valid.ng-touched {
     border: 2px solid green;
 }
-
-// button:disabled {
-//     background-color: #ccc;
-//     cursor: not-allowed;
-// }
 
 .contact-form input::placeholder, .contact-form textarea::placeholder{
     color: white;
