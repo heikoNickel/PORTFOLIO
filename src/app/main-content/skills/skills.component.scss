@@ -128,7 +128,13 @@ h3{
         color: white;
         line-height: 27.6px;
         margin-top: 20px;
-    }  
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out
+    }
+    >button:hover{
+        background-color: #a56fff;
+        transform: scale(1.2);
+    } 
 }
 
 .call-to-action-mobile{
@@ -148,7 +154,13 @@ h3{
         color: white;
         line-height: 27.6px;
         margin-top: 20px;
-    }  
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out
+    }
+    >button:hover{
+        background-color: #a56fff;
+        transform: scale(1.2);
+    } 
 }
 
 .purple{

@@ -61,6 +61,9 @@ export class SkillsComponent {
     },
   ];
 
+  scrollToSection(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 
 
 
