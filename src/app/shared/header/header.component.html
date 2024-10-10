@@ -6,18 +6,21 @@
                 <a href="#welcomeLink"><img src="./assets/img/header/logo-transparent-png.png" alt="" href="#mainPage"></a>
             </div>
 
+            @if(!(router.url === '/imprint')){
              <!-- Burger-Button für Mobilgeräte -->
              <div class="burger-menu" (click)="toggleMenu()">
                 &#9776; <!-- Das ist das Burger-Symbol (≡) -->
             </div>
+            }
 
 
-
+            @if(!(router.url === '/imprint')){
             <div class="menu">
                 <a href="#aboutMeLink" [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="setActiveSection('aboutMe')">About me</a>
                 <a href="#skillsLink" [ngClass]="{'active': activeSection === 'skills'}" (click)="setActiveSection('skills')">Skills</a>
                 <a href="#portfolioLink" [ngClass]="{'active': activeSection === 'portfolio'}" (click)="setActiveSection('portfolio')">Portfolio</a>
             </div>
+            }
         </div> 
     </div> 
         <!-- Overlay Menü (wird von rechts reingefahren) -->
