@@ -3,22 +3,28 @@
     <div class="content-area">
         <div class="header-wrapper">
             <div class="logo">
-                <a href="#welcomeLink"><img src="./assets/img/header/logo-transparent-png.png" alt="" href="#mainPage"></a>
+                <a [routerLink]="['/']"><img src="./assets/img/header/logo-transparent-png.png" alt=""></a>
             </div>
 
             @if(!(router.url === '/imprint')){
-             <!-- Burger-Button für Mobilgeräte -->
              <div class="burger-menu" (click)="toggleMenu()">
-                &#9776; <!-- Das ist das Burger-Symbol (≡) -->
+                &#9776; 
             </div>
             }
 
-
             @if(!(router.url === '/imprint')){
             <div class="menu">
-                <a href="#aboutMeLink" [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="setActiveSection('aboutMe')">About me</a>
-                <a href="#skillsLink" [ngClass]="{'active': activeSection === 'skills'}" (click)="setActiveSection('skills')">Skills</a>
-                <a href="#portfolioLink" [ngClass]="{'active': activeSection === 'portfolio'}" (click)="setActiveSection('portfolio')">Portfolio</a>
+                <a [routerLink]="['/']" fragment="aboutMeLink" 
+                   [ngClass]="{'active': activeSection === 'aboutMe'}" 
+                   (click)="setActiveSection('aboutMe')">About me</a>
+                
+                <a [routerLink]="['/']" fragment="skillsLink" 
+                   [ngClass]="{'active': activeSection === 'skills'}" 
+                   (click)="setActiveSection('skills')">Skills</a>
+                
+                <a [routerLink]="['/']" fragment="portfolioLink" 
+                   [ngClass]="{'active': activeSection === 'portfolio'}" 
+                   (click)="setActiveSection('portfolio')">Portfolio</a>
             </div>
             }
         </div> 
@@ -26,8 +32,8 @@
         <!-- Overlay Menü (wird von rechts reingefahren) -->
         <div class="overlay-menu" [class.active]="menuOpen">
             <div class="close-btn" (click)="toggleMenu()">&#10005; <!-- Das X-Symbol --> </div>
-            <a href="#aboutMeLink" [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="setActiveSection('aboutMe'); toggleMenu()">About me</a>
-            <a href="#skillsLink" [ngClass]="{'active': activeSection === 'skills'}" (click)="setActiveSection('skills'); toggleMenu()">Skills</a>
-            <a href="#portfolioLink" [ngClass]="{'active': activeSection === 'portfolio'}" (click)="setActiveSection('portfolio'); toggleMenu()">Portfolio</a>
+            <a [routerLink]="['/']" fragment="aboutMeLink" [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="setActiveSection('aboutMe'); toggleMenu()">About me</a>
+            <a [routerLink]="['/']" fragment="skillsLink" [ngClass]="{'active': activeSection === 'skills'}" (click)="setActiveSection('skills'); toggleMenu()">Skills</a>
+            <a [routerLink]="['/']" fragment="portfolioLink" [ngClass]="{'active': activeSection === 'portfolio'}" (click)="setActiveSection('portfolio'); toggleMenu()">Portfolio</a>
         </div> 
 </header>

@@ -131,25 +131,18 @@ header{
 }
 
 @media(max-width: 820px){
-    header{
-        font-size: 23px;
-    }
     .menu{
         margin-right: 40px;
     }
 }
 
 @media(max-width: 675px) {
-    /* Das normale Menü verschwindet */
     .menu {
         display: none;
     }
-
-    /* Das Burger-Menü wird sichtbar */
     .burger-menu {
         display: block;
     }
-
     .logo {
         margin-left: 10px;
         >a{ 

@@ -1,27 +1,39 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { routes } from '../../app.routes';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+
+  activeSection: string = ''; 
+  menuOpen: boolean = false;  
 
   constructor(public router: Router) {}
-  activeSection: string = ''; // Hier speichern wir die ID des aktiven Links
-  menuOpen: boolean = false;   // Zustand für das Overlay-Menü
+
+  ngOnInit(): void {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        if (this.router.url === '/') {
+          this.activeSection = ''; 
+        }
+      });
+  }
 
   setActiveSection(section: string) {
-    this.activeSection = section; // Speichert den geklickten Link
+    this.activeSection = section; 
   }
 
   toggleMenu() {
-    this.menuOpen = !this.menuOpen;  // Öffnet oder schließt das Menü
+    this.menuOpen = !this.menuOpen;
   }
 }
