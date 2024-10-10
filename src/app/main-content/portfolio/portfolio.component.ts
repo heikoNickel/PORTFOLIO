@@ -31,8 +31,8 @@ export class PortfolioComponent {
       img: "./assets/img/portfolio/pollo-loco.png",
       skills: "JavaScript | HTML | CSS",
       description: "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chicken endboss..",
-      liveTestLink: "blabla",
-      gitHubLink: "blubblub",
+      liveTestLink: "https://heiko-nickel.developerakademie.net/modul12/elPolloLoco/index.html",
+      gitHubLink: "https://github.com/heikoNickel/elPolloLoco",
     },
     {
       name: "Pokedex",

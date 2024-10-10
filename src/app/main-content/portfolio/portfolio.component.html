@@ -21,8 +21,8 @@
                 </div>
                 <div class="description">{{ item.description }}</div>
                 <div class="buttons">
-                    <button class="live">Live test</button>
-                    <button class="github">Github</button>
+                    <a [href]= "item.liveTestLink" target="_blank" rel="noopener noreferrer"><button class="live" >Live test</button></a>
+                    <a [href]= "item.gitHubLink" target="_blank" rel="noopener noreferrer"><button class="github">Github</button></a>
                 </div>
             </div>
         </div>

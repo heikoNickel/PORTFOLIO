@@ -104,13 +104,18 @@ h2{
             display: flex;
             justify-content: flex-start;
             gap: 32px;
+            >a{
             >button{
-                height: 40px;
-                width: 92px;
+                height: 60px;
+                width: 130px;
                 border: 1px solid black;
                 border-radius: 10px;
                 font-size: 18px;
                 color: white;
+                cursor: pointer;
+                }
+            >button:hover{
+                background-color: #70e61C;
             }
             .live{
                 background-color: #9747FF;
@@ -118,6 +123,7 @@ h2{
             .github{
                 background-color: transparent;
                 border-color: #70e61C;
+            }
             }
         }
     }
@@ -178,7 +184,7 @@ h2{
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 750px){
     .single-project, .single-project:nth-child(odd){
         flex-direction: column;
         align-items: center;
@@ -230,6 +236,14 @@ h2{
     }
     .background-image{
         bottom: 75px;
+    }
+    .buttons{
+        >a{
+            >button{
+                height: 40px;
+                width: 90px; 
+            }
+        }
     }
 }
 
