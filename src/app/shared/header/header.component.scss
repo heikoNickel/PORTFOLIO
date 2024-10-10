@@ -38,7 +38,7 @@ header{
     margin-left: 40px;
     >a{
         >img{
-            height: 75px;
+            height: 55px;
             width: auto;
         }
     }
@@ -133,14 +133,6 @@ header{
 @media(max-width: 820px){
     header{
         font-size: 23px;
-    }
-    .logo{
-        margin-left: 40px;
-        >a{
-            >img{
-                height: 55px;
-            }
-        }
     }
     .menu{
         margin-right: 40px;
