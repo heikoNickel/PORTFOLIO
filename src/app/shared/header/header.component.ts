@@ -1,18 +1,22 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { routes } from '../../app.routes';
 import { filter } from 'rxjs';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 
 export class HeaderComponent implements OnInit {
+
+  translate = inject(TranslationService);
 
   activeSection: string = ''; 
   menuOpen: boolean = false;  

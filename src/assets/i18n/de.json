@@ -1,0 +1,15 @@
+{
+    "aboutMe": "Über mich",
+
+    "aboutMe_main" : "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus der Nähe des Münsterlandes. Motiviert durch die grenzenlosen Möglichkeiten in der IT, begeistere ich mich für die Gestaltung von visuell ansprechenden und intuitiven Webseiten und Anwendungen.",
+    "aboutMe_flexible" : "Ich bin flexibel, was das Arbeitsumfeld angeht, und kann sowohl vor Ort im Ruhrgebiet als auch aus der Ferne effektiv arbeiten.",
+    "aboutMe_challenges" : "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um meine Kenntnisse und Fähigkeiten ständig zu verbessern.",
+    "aboutMe_profession" : "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz auf meine Fähigkeit, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu destillieren. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken.",
+
+    "developer": "Entwickler",
+    "read": "Lesen sie unsere",
+    "privacy": " Datenschutzrichtlinie ",
+    "more": "für mehr Informationen ",
+    "full": "Lesen sie unsere <a href='#'>Datenschutzrichtlinie </a> für mehr Informationen"
+
+}

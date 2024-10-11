@@ -16,7 +16,7 @@
             <div class="menu">
                 <a [routerLink]="['/']" fragment="aboutMeLink" 
                    [ngClass]="{'active': activeSection === 'aboutMe'}" 
-                   (click)="setActiveSection('aboutMe')">About me</a>
+                   (click)="setActiveSection('aboutMe')">{{'aboutMe' | translate }}</a>
                 
                 <a [routerLink]="['/']" fragment="skillsLink" 
                    [ngClass]="{'active': activeSection === 'skills'}" 
@@ -26,13 +26,17 @@
                    [ngClass]="{'active': activeSection === 'portfolio'}" 
                    (click)="setActiveSection('portfolio')">Portfolio</a>
             </div>
+            <div class="language">
+                <button (click)="translate.switchLanguage('en')">EN</button>
+                <button (click)="translate.switchLanguage('de')">DE</button>
+            </div>
             }
         </div> 
     </div> 
         <!-- Overlay Menü (wird von rechts reingefahren) -->
         <div class="overlay-menu" [class.active]="menuOpen">
             <div class="close-btn" (click)="toggleMenu()">&#10005; <!-- Das X-Symbol --> </div>
-            <a [routerLink]="['/']" fragment="aboutMeLink" [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="setActiveSection('aboutMe'); toggleMenu()">About me</a>
+            <a [routerLink]="['/']" fragment="aboutMeLink" [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="setActiveSection('aboutMe'); toggleMenu()">{{'aboutMe' | translate }}</a>
             <a [routerLink]="['/']" fragment="skillsLink" [ngClass]="{'active': activeSection === 'skills'}" (click)="setActiveSection('skills'); toggleMenu()">Skills</a>
             <a [routerLink]="['/']" fragment="portfolioLink" [ngClass]="{'active': activeSection === 'portfolio'}" (click)="setActiveSection('portfolio'); toggleMenu()">Portfolio</a>
         </div> 
