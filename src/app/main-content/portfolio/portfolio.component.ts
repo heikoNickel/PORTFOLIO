@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../../translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface PROJECT{
   name: string;
@@ -12,17 +14,20 @@ interface PROJECT{
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
+
+  translate = inject(TranslationService);
+
   project: PROJECT []=[
     {
       name: "Join",
       img: "./assets/img/portfolio/join.png",
       skills: "Angular | TypeScript | HTML | CSS | Firebase",
-      description: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      description: 'PROJECTS.JOIN.DESCRIPTION',
       liveTestLink: "blabla",
       gitHubLink: "blubblub",
     },
@@ -30,7 +35,7 @@ export class PortfolioComponent {
       name: "El Pollo Loco",
       img: "./assets/img/portfolio/pollo-loco.png",
       skills: "JavaScript | HTML | CSS",
-      description: "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chicken endboss..",
+      description: 'PROJECTS.EL_POLLO_LOCO.DESCRIPTION',
       liveTestLink: "https://heiko-nickel.developerakademie.net/modul12/elPolloLoco/index.html",
       gitHubLink: "https://github.com/heikoNickel/elPolloLoco",
     },
@@ -38,9 +43,12 @@ export class PortfolioComponent {
       name: "Pokedex",
       img: "./assets/img/portfolio/pokedex.png",
       skills: "JavaScript | HTML | CSS | API",
-      description: "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+      description: 'PROJECTS.POKEDEX.DESCRIPTION',
       liveTestLink: "blabla",
       gitHubLink: "blubblub",
     },
   ];
 }
+
+
+

@@ -19,7 +19,7 @@
                 <div class="name">{{ item.name }}</div>
                 <div class="skills">{{ item.skills }}
                 </div>
-                <div class="description">{{ item.description }}</div>
+                <div class="description">{{ item.description | translate}}</div>
                 <div class="buttons">
                     <a [href]= "item.liveTestLink" target="_blank" rel="noopener noreferrer"><button class="live" >Live test</button></a>
                     <a [href]= "item.gitHubLink" target="_blank" rel="noopener noreferrer"><button class="github">Github</button></a>

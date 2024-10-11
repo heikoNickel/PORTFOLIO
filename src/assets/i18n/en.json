@@ -12,6 +12,21 @@
     "skills_cta_2" : "another skill",
     "skills_contact" : "Feel free to contact me. I look forward to expanding on my previous knowledge.",
 
+    "PROJECTS": {
+        "JOIN": {
+        "NAME": "Join",
+        "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+        },
+        "EL_POLLO_LOCO": {
+        "NAME": "El Pollo Loco",
+        "DESCRIPTION": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chicken endboss."
+        },
+        "POKEDEX" : {
+        "NAME": "Pokedex",
+        "DESCRIPTION": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+        }
+    },
+    
     "developer": "Developer",
     "read": "Read our",
     "privacy": " privacy policy ",

@@ -12,6 +12,22 @@
     "skills_cta_2" : "weitere skills",
     "skills_contact" : "Sie können mich gerne kontaktieren. Ich freue mich darauf, meine bisherigen Kenntnisse zu erweitern.",
 
+    "PROJECTS": {
+        "JOIN": {
+        "NAME": "Join",
+        "DESCRIPTION": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+        },
+        "EL_POLLO_LOCO": {
+        "NAME": "El Pollo Loco",
+        "DESCRIPTION": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Salsaflaschen zu finden, um gegen den Hühnchen-Endboss zu kämpfen."
+        },
+        "POKEDEX" : {
+        "NAME": "Pokedex",
+        "DESCRIPTION": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
+        }
+    },
+    
+
     "developer": "Entwickler",
     "read": "Lesen sie unsere",
     "privacy": " Datenschutzrichtlinie ",
