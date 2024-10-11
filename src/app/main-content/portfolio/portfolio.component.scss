@@ -11,8 +11,6 @@ section{
 }
 
 .background-image{
-    // width: 420px;
-    // height: 950px;
     position: absolute;
     left: -300px;
     bottom: -200px;
@@ -20,8 +18,6 @@ section{
 }
 
 .background-image-green{
-    // width: 420px;
-    // height: 950px;
     position: absolute;
     right: -360px;
     bottom: -400px;
@@ -237,13 +233,19 @@ h2{
     .background-image{
         bottom: 75px;
     }
-    .buttons{
-        >a{
-            >button{
-                height: 40px;
-                width: 90px; 
+    .single-project{
+        >.project-infos{
+            >.buttons{
+                >a{
+                    >button{
+                        height: 50px;
+                        width: 110px;
+                    }
+                >button:hover{
+                    background-color: #70e61C;
+                }
+                }
             }
         }
     }
 }
-
