@@ -69,6 +69,30 @@ header{
     }
 }
 
+.language{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    >button{
+        width: 35px;
+        height: 25px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: white;
+        font-family: 'Poppins';   
+        font-weight: bold;
+    } 
+    >button:hover{
+        background-color: #70e91c;
+    }
+    .active-language {
+        background-color: #70e91c; /* Farbe für die aktive Sprache */
+    }
+}
+
+
+
 /* Das Burger-Menü und Overlay-Menü (zuerst versteckt) */
 .burger-menu {
     display: none;
@@ -130,9 +154,36 @@ header{
     color: white;
 }
 
+.language_overlay{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    >button{
+        width: 35px;
+        height: 25px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: white;
+        font-family: 'Poppins';   
+        font-weight: bold;
+    } 
+    >button:hover{
+        background-color: #70e91c;
+    }
+    .active-language {
+        background-color: #70e91c; /* Farbe für die aktive Sprache */
+    }
+}
+
 @media(max-width: 820px){
     .menu{
         margin-right: 40px;
+        gap: 20px;
+        >a{
+            font-size: 22px;
+        }
     }
 }
 

@@ -12,8 +12,9 @@
             </div>
             }
 
-            @if(!(router.url === '/imprint')){
+            <!-- @if(!(router.url === '/imprint')){ -->
             <div class="menu">
+                @if(!(router.url === '/imprint')){
                 <a [routerLink]="['/']" fragment="aboutMeLink" 
                    [ngClass]="{'active': activeSection === 'aboutMe'}" 
                    (click)="setActiveSection('aboutMe')">{{'aboutMe' | translate }}</a>
@@ -25,12 +26,17 @@
                 <a [routerLink]="['/']" fragment="portfolioLink" 
                    [ngClass]="{'active': activeSection === 'portfolio'}" 
                    (click)="setActiveSection('portfolio')">Portfolio</a>
+                }
+                <div class="language">
+                    <button (click)="translate.switchLanguage('en')" [ngClass]="{'active-language': translate.getCurrentLanguage() === 'en'}">EN</button>
+                    <button (click)="translate.switchLanguage('de')" [ngClass]="{'active-language': translate.getCurrentLanguage() === 'de'}">DE</button>
+                </div>
             </div>
-            <div class="language">
+            <!-- <div class="language">
                 <button (click)="translate.switchLanguage('en')">EN</button>
                 <button (click)="translate.switchLanguage('de')">DE</button>
-            </div>
-            }
+            </div> -->
+            <!-- } -->
         </div> 
     </div> 
         <!-- Overlay Menü (wird von rechts reingefahren) -->
@@ -39,5 +45,9 @@
             <a [routerLink]="['/']" fragment="aboutMeLink" [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="setActiveSection('aboutMe'); toggleMenu()">{{'aboutMe' | translate }}</a>
             <a [routerLink]="['/']" fragment="skillsLink" [ngClass]="{'active': activeSection === 'skills'}" (click)="setActiveSection('skills'); toggleMenu()">Skills</a>
             <a [routerLink]="['/']" fragment="portfolioLink" [ngClass]="{'active': activeSection === 'portfolio'}" (click)="setActiveSection('portfolio'); toggleMenu()">Portfolio</a>
+            <div class="language_overlay">
+                <button (click)="translate.switchLanguage('en')" [ngClass]="{'active-language': translate.getCurrentLanguage() === 'en'}">EN</button>
+                <button (click)="translate.switchLanguage('de')" [ngClass]="{'active-language': translate.getCurrentLanguage() === 'de'}">DE</button>
+            </div>
         </div> 
 </header>
