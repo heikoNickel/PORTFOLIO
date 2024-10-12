@@ -51,8 +51,26 @@
             "REVIEW" : "Heiko war ein unverzichtbares Mitglied unseres Teams, bekannt für sein tiefes Verständnis von JavaScript und seine außergewöhnlichen analytischen Fähigkeiten. Er erledigte komplexe Aufgaben effizient, vor allem bei der Fehlersuche in schwierigen Situationen, und zeigte auch in frustrierenden Momenten eine bemerkenswerte Ausdauer und eine positive Einstellung. Heikos Fähigkeit, die Ansätze anderer Teammitglieder in Betracht zu ziehen, kombiniert mit seiner Offenheit für andere Perspektiven, machte ihn zu einem hochgeschätzten und kooperativen Teamplayer."
         }
     },
-    
 
+    "contact" : "Kontakt",
+    "contact_headline" : "Haben Sie ein Problem zu lösen?",
+    "contact_text" : "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "contact_cta_1" : "Brauchen Sie einen Frontend-Entwickler?",
+    "contact_cta_2" : "Kontaktieren Sie mich!",
+    "contact_name" : "Ihr Name",
+    "contact_name_error" : "Ihr Name ist erforderlich und darf nur aus Buchstaben bestehen!", 
+    "contact_email" : "Ihre Email",
+    "contact_email_error" : "Ihre E-Mail ist erforderlich und muss das Symbol &commat; enthalten.",
+    "contact_message" : "Ihre Nachricht",
+    "contact_message_error" : "Der Nachrichtentext muss mindestens 4 Zeichen lang sein.",
+    "contact_privacy_1" : "Ich habe die ",
+    "contact_privacy_2" : "Datenschutzbestimmungen ",
+    "contact_privacy_3" : "gelesen und erkläre mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
+    "contact_privacy_error" : "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
+    "contact_button" : "Abschicken :)",
+
+    "footer_privacy" : "Datenschutzrichtlinie",
+    
     "developer": "Entwickler",
     "read": "Lesen sie unsere",
     "privacy": " Datenschutzrichtlinie ",

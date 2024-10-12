@@ -3,19 +3,19 @@
     <div class="content-area">
         <div class="title-container">
             <div class="title-line"></div>
-            <h2>Contact</h2>
+            <h2>{{ 'contact' | translate }}</h2>
             <div class="title-line" style="visibility:hidden;"></div>
         </div>
         <div class="contact-container">
             <div class="problem-solve">
-                <h3>Got a problem to solve?</h3>
-                <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.</p>
-                <p>Need a Frontend developer? <b>Contact me!</b></p>
+                <h3>{{ 'contact_headline' | translate }}</h3>
+                <p>{{ 'contact_text' | translate }}</p>
+                <p>{{ 'contact_cta_1' | translate }} <b>{{ 'contact_cta_2' | translate }}</b></p>
             </div>
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                 <div class="contact-form">
                     <div class="input-wrapper">
-                        <input class="name" type="text" formControlName="name" (focus)="onFocus('name')" placeholder="Your name">
+                        <input class="name" type="text" formControlName="name" (focus)="onFocus('name')" placeholder= "{{ 'contact_name' | translate}}">
                         @if(contactForm.controls['name'].valid && contactForm.controls['name'].touched){ 
                             <img src="./assets/img/contact/input-ok.png" alt="">
                         } @else if(contactForm.controls['name'].invalid && contactForm.controls['name'].touched){
@@ -23,10 +23,11 @@
                         }
                     </div>
                     <div class="name-error" [ngStyle]="{'visibility': contactForm.controls['name'].invalid && contactForm.controls['name'].touched ? 'visible' : 'hidden'}">
-                        Your name is required and must contain only letters!
+                        <!-- 'Your name is required and must contain only letters!' -->
+                        {{ 'contact_name_error' | translate}}
                     </div>
                     <div class="input-wrapper">
-                        <input class="email" type="email" formControlName="email" (focus)="onFocus('email')" placeholder="Your email">
+                        <input class="email" type="email" formControlName="email" (focus)="onFocus('email')" placeholder="{{ 'contact_email' | translate}}">
                         @if(contactForm.controls['email'].valid && contactForm.controls['email'].touched){ 
                             <img src="./assets/img/contact/input-ok.png" alt="">
                         } @else if(contactForm.controls['email'].invalid && contactForm.controls['email'].touched){
@@ -34,10 +35,11 @@
                         }
                         </div>
                     <div class="email-error" [ngStyle]="{'visibility': contactForm.controls['email'].invalid && contactForm.controls['email'].touched ? 'visible' : 'hidden'}">
-                        Your email is required and must include the symbol.
+                        <!-- Your email is required and must include the symbol. -->
+                        {{ 'contact_email_error' | translate}}
                     </div>
                     <div class="message-wrapper">
-                        <textarea class="text" formControlName="message" (focus)="onFocus('message')" placeholder="Your message"></textarea>
+                        <textarea class="text" formControlName="message" (focus)="onFocus('message')" placeholder="{{ 'contact_message' | translate}}"></textarea>
                         @if(contactForm.controls['message'].valid && contactForm.controls['message'].touched){ 
                             <img src="./assets/img/contact/input-ok.png" alt="">
                         } @else if(contactForm.controls['message'].invalid && contactForm.controls['message'].touched){
@@ -45,7 +47,8 @@
                         }
                     </div>
                     <div class="message-error" [ngStyle]="{'visibility': contactForm.controls['message'].invalid && contactForm.controls['message'].touched ? 'visible' : 'hidden'}">
-                        Message text must be at least 4 characters long.
+                        <!-- Message text must be at least 4 characters long. -->
+                        {{ 'contact_message_error' | translate}}
                     </div>
                     <label>
                         <div class="checkbox-wrapper">
@@ -53,15 +56,16 @@
                                 <input type="checkbox" formControlName="privacy" (change)="onCheckboxChange()">
                             </div>
                             <div class="privacy">
-                                I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.
+                                {{ 'contact_privacy_1' | translate}} <a [routerLink]="['/imprint']">{{ 'contact_privacy_2' | translate}}</a> {{ 'contact_privacy_3' | translate}}
                             </div>
                         </div>
                         <span class="privacy-error" [ngStyle]="{'visibility': contactForm.controls['privacy'].invalid && contactForm.controls['privacy'].touched ? 'visible' : 'hidden'}">
-                            Please accept the privacy policy.
+                            <!-- Please accept the privacy policy. -->
+                            {{ 'contact_privacy_error' | translate}}
                         </span>
                     </label>
                     <div class="button-wrapper">
-                        <button type="submit" [disabled]="contactForm.invalid">Send message :)</button>
+                        <button type="submit" [disabled]="contactForm.invalid">{{ 'contact_button' | translate }}</button>
                     </div>
                 </div>
             </form>
