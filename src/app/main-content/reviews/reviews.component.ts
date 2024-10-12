@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../../translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface REVIEWS{
   name: string;
@@ -10,30 +12,45 @@ interface REVIEWS{
 @Component({
   selector: 'app-reviews',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './reviews.component.html',
   styleUrl: './reviews.component.scss'
 })
 export class ReviewsComponent {
+
+  translate = inject(TranslationService);
+
   review: REVIEWS []=[
     {
-      name: "V.Schuster",
-      title: "Team Partner",
+      name: "Salmai S.",
+      title: "REVIEWS.FIRST.TITLE",
       img: "./assets/img/reviews/man.png",
-      review: "Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+      review: "REVIEWS.FIRST.REVIEW",
     },
     {
-      name: "E.Eichinger",
-      title: "Team Partner",
+      name: "Marvin D.",
+      title: "REVIEWS.SECOND.TITLE",
       img: "./assets/img/reviews/user.png",
-      review: "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+      review: "REVIEWS.SECOND.REVIEW",
     },
     {
-      name: "I.Nuber",
-      title: "Frontend Engineer",
-      img: "./assets/img/reviews/woman.png",
-      review: "MIt was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well..",
+      name: "Marc B.",
+      title: "REVIEWS.THIRD.TITLE",
+      img: "./assets/img/reviews/man.png",
+      review: "REVIEWS.THIRD.REVIEW",
     },
+    {
+      name: "Philipp B.",
+      title: "REVIEWS.FOURTH.TITLE",
+      img: "./assets/img/reviews/user.png",
+      review: "REVIEWS.FOURTH.REVIEW",
+    },
+    {
+      name: "Fabion L.",
+      title: "REVIEWS.FIFTH.TITLE",
+      img: "./assets/img/reviews/man.png",
+      review: "REVIEWS.FIFTH.REVIEW",
+    }
   ];
 
   currentIndex: number = 0;

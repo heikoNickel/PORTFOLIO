@@ -12,18 +12,43 @@
     "skills_cta_2" : "another skill",
     "skills_contact" : "Feel free to contact me. I look forward to expanding on my previous knowledge.",
 
+    "portfolio" : "Explore a selection of my work here - Interact with projects to see my skills in action.",
+
     "PROJECTS": {
         "JOIN": {
-        "NAME": "Join",
-        "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+            "NAME": "Join",
+            "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
         },
         "EL_POLLO_LOCO": {
-        "NAME": "El Pollo Loco",
-        "DESCRIPTION": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chicken endboss."
+            "NAME": "El Pollo Loco",
+            "DESCRIPTION": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chicken endboss."
         },
         "POKEDEX" : {
-        "NAME": "Pokedex",
-        "DESCRIPTION": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+            "NAME": "Pokedex",
+            "DESCRIPTION": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+        }
+    },
+
+    "REVIEWS": {
+        "FIRST" : {
+            "TITLE" : "Team Member",
+            "REVIEW" : "Heiko’s organizational skills were the backbone of our project’s success. His exceptional ability to keep the team on track and ensure all aspects of the project were covered was impressive. Heiko’s structured approach and unwavering focus allowed us to navigate even the most challenging situations with ease."
+        },
+        "SECOND" : {
+            "TITLE" : "Team Member",
+            "REVIEW" : "Heiko Nickel has always impressed in the area of programming with his outstanding expertise and great commitment. His helpfulness deserves special mention: he was always on hand to solve complex problems and dealt with them efficiently and reliably. Mr. Nickel is characterized by a quick grasp and the ability to find innovative solutions even under time pressure. His solution-oriented way of working and his above-average commitment have contributed significantly to the success of our projects."
+        },
+        "THIRD" : {
+            "TITLE" : "Team Member",
+            "REVIEW" : "Heiko showed remarkable versatility during our joint project. Not only did he already have an excellent command of HTML, CSS and JavaScript, but he also contributed valuable ideas for improving user-friendliness and accessibility. He was a lot of fun to work with!"
+        },
+        "FOURTH" : {
+            "TITLE" :"Team Member",
+            "REVIEW" : "Heiko Nickel consistently impressed with his ability to develop innovative and effective solutions, skillfully addressing even the most complex challenges. His professional, organized, and focused work style made him a vital part of our team. I particularly appreciated his calm and thoughtful approach, which helped us navigate difficult situations with confidence. Heiko’s sense of humor added a positive energy to our collaboration, making the work environment both enjoyable and productive. I highly recommend Heiko."
+        },
+        "FIFTH" : {
+            "TITLE" :"Team Member",
+            "REVIEW" : "Heiko was an essential member of our team, known for his deep understanding of JavaScript and exceptional analytical skills. He efficiently handled complex tasks, especially when debugging challenging issues, showing remarkable persistence and a positive attitude even in frustrating moments. Heiko's ability to consider other team members' approaches, combined with his openness to different perspectives, made him a highly valued and collaborative team player."
         }
     },
     

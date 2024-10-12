@@ -12,6 +12,8 @@
     "skills_cta_2" : "weitere skills",
     "skills_contact" : "Sie können mich gerne kontaktieren. Ich freue mich darauf, meine bisherigen Kenntnisse zu erweitern.",
 
+    "portfolio" : "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+
     "PROJECTS": {
         "JOIN": {
         "NAME": "Join",
@@ -24,6 +26,29 @@
         "POKEDEX" : {
         "NAME": "Pokedex",
         "DESCRIPTION": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
+        }
+    },
+
+    "REVIEWS": {
+        "FIRST" : {
+            "TITLE" : "Team Member",
+            "REVIEW" : "Heikos organisatorische Fähigkeiten waren das Rückgrat des Erfolgs unseres Projekts. Seine außergewöhnliche Fähigkeit, das Team auf Kurs zu halten und sicherzustellen, dass alle Aspekte des Projekts abgedeckt wurden, war beeindruckend. Heikos strukturierte Herangehensweise und sein unerschütterlicher Fokus ermöglichten es uns, selbst die schwierigsten Situationen mit Leichtigkeit zu meistern."
+        },
+        "SECOND" : {
+            "TITLE" : "Team Member",
+            "REVIEW" : "Heiko Nickel hat im Bereich der Programmierung stets durch seine herausragende Kompetenz und sein großes Engagement überzeugt. Besonders hervorzuheben ist seine Hilfsbereitschaft, mit der er auch bei komplexen Problemen stets zur Stelle war und diese effizient und zuverlässig bewältigte. Herr Nickel zeichnet sich durch eine schnelle Auffassungsgabe und die Fähigkeit aus, auch unter Zeitdruck innovative Lösungen zu finden. Seine lösungsorientierte Arbeitsweise und sein überdurchschnittliches Engagement haben wesentlich zum Erfolg unserer Projekte beigetragen."
+        },
+        "THIRD" : {
+            "TITLE" : "Team Member",
+            "REVIEW" : "Heiko zeigte während unseres gemeinsamen Projekts eine bemerkenswerte Vielseitigkeit. Er beherrschte nicht nur HTML, CSS und JavaScript bereits hervorragend, sondern brachte auch wertvolle Ideen zur Verbesserung der Benutzerfreundlichkeit und Barrierefreiheit ein. Es hat sehr viel Spaß gemacht, mit ihm zu arbeiten!"
+        },
+        "FOURTH" : {
+            "TITLE" :"Team Member",
+            "REVIEW" : "Heiko Nickel hat uns immer wieder mit seiner Fähigkeit beeindruckt, innovative und effektive Lösungen zu entwickeln und selbst die komplexesten Herausforderungen geschickt zu meistern. Sein professioneller, organisierter und konzentrierter Arbeitsstil machte ihn zu einem unverzichtbaren Teil unseres Teams. Besonders geschätzt habe ich seine ruhige und überlegte Herangehensweise, die uns half, schwierige Situationen souverän zu meistern. Heikos Sinn für Humor verlieh unserer Zusammenarbeit eine positive Energie und machte die Arbeitsumgebung sowohl angenehm als auch produktiv. Ich kann Heiko sehr empfehlen."
+        },
+        "FIFTH" : {
+            "TITLE" :"Team Member",
+            "REVIEW" : "Heiko war ein unverzichtbares Mitglied unseres Teams, bekannt für sein tiefes Verständnis von JavaScript und seine außergewöhnlichen analytischen Fähigkeiten. Er erledigte komplexe Aufgaben effizient, vor allem bei der Fehlersuche in schwierigen Situationen, und zeigte auch in frustrierenden Momenten eine bemerkenswerte Ausdauer und eine positive Einstellung. Heikos Fähigkeit, die Ansätze anderer Teammitglieder in Betracht zu ziehen, kombiniert mit seiner Offenheit für andere Perspektiven, machte ihn zu einem hochgeschätzten und kooperativen Teamplayer."
         }
     },
     

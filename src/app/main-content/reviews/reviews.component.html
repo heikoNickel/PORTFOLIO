@@ -6,13 +6,12 @@
                 <div class="review-frame">
                     <div class="apostroph"><img src="./assets/img/reviews/purple_apostroph.png" alt=""></div>
                     <div class="review-text">
-                    <!-- Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment. -->
-                     {{ currentReview.review }}
+                     {{ currentReview.review | translate}}
                      <br><br>
                     </div>
                     <div class="name-container">
                         <div class="line"></div>
-                        <span class="name"> {{ currentReview.name }} - {{ currentReview.title }}</span>
+                        <span class="name"> {{ currentReview.name }} - {{ currentReview.title | translate }}</span>
                     </div>
                 </div>
                 <div class="profile">
