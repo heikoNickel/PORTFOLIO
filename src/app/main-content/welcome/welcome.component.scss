@@ -90,7 +90,7 @@ p{
 
 .img-container-profile{
     position: absolute;
-    top: 0;
+    top: 31px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@ p{
 
 .background-image-bow{
     position: absolute;
-    top: 200px;
+    top: 190px;
     z-index: 5;
 }
 
@@ -184,7 +184,7 @@ p{
     .info-wrapper{
         width: 400px;
         right: 150px;
-        top: 580px;
+        top: 590px;
         >button{
             width: 130px;
             height: 50px;
@@ -212,6 +212,7 @@ p{
 
 @media (max-width: 735px) {
     .img-container-profile{
+        top: 35px;
         width: 480px;
         right: 50%;
         transform: translateX(50%);
@@ -233,6 +234,7 @@ p{
 
 @media (max-width: 480px) {
     .img-container-profile{
+        top: 20px;
         width: 320px;
         right: 50%;
         transform: translateX(50%);
