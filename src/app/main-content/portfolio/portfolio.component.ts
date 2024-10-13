@@ -44,7 +44,7 @@ export class PortfolioComponent {
       img: "./assets/img/portfolio/pokedex.png",
       skills: "JavaScript | HTML | CSS | API",
       description: 'PROJECTS.POKEDEX.DESCRIPTION',
-      liveTestLink: "blabla",
+      liveTestLink: "https://heiko-nickel.developerakademie.net/modul9/pokeDex/index.html",
       gitHubLink: "blubblub",
     },
   ];

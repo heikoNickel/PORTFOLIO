@@ -66,6 +66,13 @@
                     </label>
                     <div class="button-wrapper">
                         <button type="submit" [disabled]="contactForm.invalid">{{ 'contact_button' | translate }}</button>
+                        <div class="response-message">
+                            @if(successMessage){
+                                <span class="success-message">{{ successMessage }}</span>
+                            } @else if(errorMessage){
+                                <span class="error-message">{{ errorMessage }}</span>
+                            }
+                        </div>
                     </div>
                 </div>
             </form>

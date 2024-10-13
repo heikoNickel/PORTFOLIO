@@ -219,6 +219,8 @@ textarea:focus {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     transform: translateX(15px);
 }
 
@@ -263,6 +265,21 @@ textarea:focus {
 .privacy-error{
     padding-left: 7px;
 }
+
+.success-message {
+    color: green;
+  }
+  
+  .error-message {
+    color: red;
+  }
+
+  .response-message{
+    margin-top: 10px;
+    height: 50px;
+    width: 253px;
+    text-align: center;
+  }
 
 @media(max-width:1050px){
     .contact-container{
