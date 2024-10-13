@@ -7,13 +7,14 @@
         </div>
             <div class="info-wrapper">
                 <div class="info-headline">
-                    <div class="iam"><span>I am</span></div>
+                    <div class="iam" [ngClass]="{'hide': translate.getCurrentLanguage() === 'de'}"><span>I am</span></div>
                 <div class="name-title">
                     <span class="name">Heiko Nickel</span>
                     <span class="title">Frontend Developer</span>
                 </div>
             </div>
-            <button (click)="scrollToSection('contactLink')">Let&#039;s talk!</button>
+            <!-- <button (click)="scrollToSection('contactLink')">Let&#039;s talk!</button> -->
+            <button (click)="scrollToSection('contactLink')">{{ 'welcome_button' | translate }}</button>
         </div>
         <div class="social-scroll">
             <div class="social">

@@ -1,4 +1,6 @@
 {
+    "welcome_button" : "Let's talk!",
+
     "aboutMe": "About me",
 
     "aboutMe_main" : "Hi, I'm a german speaking Frontend Developer based near Münsterland. Motivated by the limitless opportunities within IT, I am excited about crafting visually captivating and intuitive websites and applications.",
@@ -11,6 +13,7 @@
     "skills_cta_1" : "Looking for",
     "skills_cta_2" : "another skill",
     "skills_contact" : "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "skills_contact_button" : "Get in touch!",
 
     "portfolio" : "Explore a selection of my work here - Interact with projects to see my skills in action.",
 
@@ -60,7 +63,7 @@
     "contact_name" : "Your name",
     "contact_name_error" : "Your name is required and must contain only letters!", 
     "contact_email" : "Your email",
-    "contact_email_error" : "Your email is required and must include the &commat; symbol.",
+    "contact_email_error" : "Your email is required and must include the @ symbol.",
     "contact_message" : "Your message",
     "contact_message_error" : "Message text must be at least 4 characters long.",
     "contact_privacy_1" : "I've read the ",
@@ -68,6 +71,8 @@
     "contact_privacy_3" : "and agree to the processing of my data as outlined.",
     "contact_privacy_error" : "Please accept the privacy policy.",
     "contact_button" : "Send Message :)",
+    "contact_success" : "Thank you, your message has been sent successfully!",
+    "contact_error" : "There was a problem sending the form. Please try again.",
 
     "footer_privacy" : "Legal Notice",
     

@@ -11,8 +11,6 @@
                 &#9776; 
             </div>
             }
-
-            <!-- @if(!(router.url === '/imprint')){ -->
             <div class="menu">
                 @if(!(router.url === '/imprint')){
                 <a [routerLink]="['/']" fragment="aboutMeLink" 
@@ -26,17 +24,13 @@
                 <a [routerLink]="['/']" fragment="portfolioLink" 
                    [ngClass]="{'active': activeSection === 'portfolio'}" 
                    (click)="setActiveSection('portfolio')">Portfolio</a>
-                }
+                   
                 <div class="language">
                     <button (click)="translate.switchLanguage('en')" [ngClass]="{'active-language': translate.getCurrentLanguage() === 'en'}">EN</button>
                     <button (click)="translate.switchLanguage('de')" [ngClass]="{'active-language': translate.getCurrentLanguage() === 'de'}">DE</button>
                 </div>
+                }
             </div>
-            <!-- <div class="language">
-                <button (click)="translate.switchLanguage('en')">EN</button>
-                <button (click)="translate.switchLanguage('de')">DE</button>
-            </div> -->
-            <!-- } -->
         </div> 
     </div> 
         <!-- Overlay Menü (wird von rechts reingefahren) -->

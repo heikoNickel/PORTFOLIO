@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslationService } from '../../translation.service';
+import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
@@ -22,10 +23,12 @@ export class ContactComponent {
   successMessage: string = '';
   errorMessage: string = '';
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {
+  private emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  
+  constructor(private fb: FormBuilder, private http: HttpClient, private ngxTranslate: TranslateService) {
     this.contactForm = this.fb.group({
       name: ['', [Validators.required, Validators.pattern('^[A-Za-z ]+$')]],
-      email: ['', [Validators.required, Validators.email]],
+      email: ['', [Validators.required, Validators.pattern(this.emailPattern)]],
       message: ['', [Validators.required, Validators.minLength(4)]],
       privacy: [false, [Validators.requiredTrue]]
     });
@@ -51,7 +54,9 @@ export class ContactComponent {
         message: formData.message
       }).subscribe({
         next: (response) => {
-          this.successMessage = 'Danke, Ihre Nachricht wurde erfolgreich gesendet!';
+          // this.successMessage = 'Danke, Ihre Nachricht wurde erfolgreich gesendet!';
+          this.successMessage = this.ngxTranslate.instant('contact_success');
+          // this.successMessage = {{ 'contact_success' | translate}};
           this.contactForm.reset({
             name: '',
             email: '',
@@ -61,9 +66,10 @@ export class ContactComponent {
           this.hideMessagesAfterDelay();
         },
         error: (error) => {
-          this.errorMessage = 'Es gab ein Problem beim Senden des Formulars. Bitte versuchen Sie es erneut.';
+          // this.errorMessage = 'Es gab ein Problem beim Senden des Formulars. Bitte versuchen Sie es erneut.';
+          this.errorMessage = this.ngxTranslate.instant('contact_error');
           this.successMessage = '';
-          this.hideMessagesAfterDelay();
+          // this.hideMessagesAfterDelay();
         }
       });
     }

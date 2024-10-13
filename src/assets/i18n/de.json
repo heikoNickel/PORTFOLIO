@@ -1,4 +1,7 @@
 {
+
+    "welcome_button" : "Kontakt",
+
     "aboutMe": "Über mich",
 
     "aboutMe_main" : "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus der Nähe des Münsterlandes. Motiviert durch die grenzenlosen Möglichkeiten in der IT, begeistere ich mich für die Gestaltung von visuell ansprechenden und intuitiven Webseiten und Anwendungen.",
@@ -11,6 +14,7 @@
     "skills_cta_1" : "Suchen Sie ",
     "skills_cta_2" : "weitere skills",
     "skills_contact" : "Sie können mich gerne kontaktieren. Ich freue mich darauf, meine bisherigen Kenntnisse zu erweitern.",
+    "skills_contact_button" : "Kontakt",
 
     "portfolio" : "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
 
@@ -60,7 +64,7 @@
     "contact_name" : "Ihr Name",
     "contact_name_error" : "Ihr Name ist erforderlich und darf nur aus Buchstaben bestehen!", 
     "contact_email" : "Ihre Email",
-    "contact_email_error" : "Ihre E-Mail ist erforderlich und muss das Symbol &commat; enthalten.",
+    "contact_email_error" : "Ihre E-Mail ist erforderlich und muss das @ Symbol enthalten.",
     "contact_message" : "Ihre Nachricht",
     "contact_message_error" : "Der Nachrichtentext muss mindestens 4 Zeichen lang sein.",
     "contact_privacy_1" : "Ich habe die ",
@@ -68,6 +72,8 @@
     "contact_privacy_3" : "gelesen und erkläre mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
     "contact_privacy_error" : "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
     "contact_button" : "Abschicken :)",
+    "contact_success" : "Danke, Ihre Nachricht wurde erfolgreich gesendet!",
+    "contact_error" : "Es gab ein Problem beim Senden des Formulars. Bitte versuchen Sie es erneut.",
 
     "footer_privacy" : "Datenschutzrichtlinie",
     

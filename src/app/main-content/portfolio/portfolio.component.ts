@@ -28,8 +28,8 @@ export class PortfolioComponent {
       img: "./assets/img/portfolio/join.png",
       skills: "Angular | TypeScript | HTML | CSS | Firebase",
       description: 'PROJECTS.JOIN.DESCRIPTION',
-      liveTestLink: "blabla",
-      gitHubLink: "blubblub",
+      liveTestLink: "https://heiko-nickel.developerakademie.net/modul10/log_in/log_in.html",
+      gitHubLink: "https://github.com/heikoNickel/Join",
     },
     {
       name: "El Pollo Loco",
@@ -45,7 +45,7 @@ export class PortfolioComponent {
       skills: "JavaScript | HTML | CSS | API",
       description: 'PROJECTS.POKEDEX.DESCRIPTION',
       liveTestLink: "https://heiko-nickel.developerakademie.net/modul9/pokeDex/index.html",
-      gitHubLink: "blubblub",
+      gitHubLink: "https://github.com/heikoNickel/Pokedex",
     },
   ];
 }
