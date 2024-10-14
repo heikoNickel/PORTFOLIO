@@ -90,7 +90,7 @@ p{
 
 .img-container-profile{
     position: absolute;
-    top: 31px;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@ p{
 
 .background-image-bow{
     position: absolute;
-    top: 190px;
+    top: 155px;
     z-index: 5;
 }
 
@@ -150,6 +150,7 @@ p{
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
 .wrapper-icons:hover{
@@ -161,6 +162,8 @@ p{
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease;
+    font-size: 24px;
+    padding-left: 10px;
 }
 
 .wrapper-text:hover{
@@ -234,11 +237,14 @@ p{
         right: 50%;
         transform: translateX(42%);
     }
-    .email-social{
-        display: none;
-    }
     .translateX{
         transform: translateX(50%) !important;
+    }
+}
+
+@media (max-width: 550px){
+    .email-social{
+        display: none;
     }
 }
 
