@@ -5,7 +5,8 @@
         <div class="footer-wrapper">
         <div class="logo-copyright-icon-wrapper">
             <div class="logo">
-                <a href="#welcomeLink"><img src="./assets/img/header/logo-transparent-png.png" alt="" href="#mainPage"></a>
+                <!-- <a href="#welcomeLink"><img src="./assets/img/header/logo-transparent-png.png" alt="" href="#mainPage"></a> -->
+                <a [routerLink]="['/']" (click)="scrollToTop()"><img src="./assets/img/footer/logo-transparent-png.png" alt=""></a>
             </div>
             <div class="copyright">
                 &copy; Heiko Nickel

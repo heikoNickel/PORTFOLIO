@@ -3,7 +3,7 @@
     <div class="content-area">
         <div class="header-wrapper">
             <div class="logo">
-                <a [routerLink]="['/']"><img src="./assets/img/header/logo-transparent-png.png" alt=""></a>
+                <a [routerLink]="['/']" (click)="scrollToTop()"><img src="./assets/img/header/logo-transparent-png.png" alt=""></a>
             </div>
 
             @if(!(router.url === '/imprint')){

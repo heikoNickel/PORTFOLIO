@@ -18,4 +18,8 @@ export class FooterComponent {
     document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
 }
