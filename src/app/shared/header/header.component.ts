@@ -37,11 +37,23 @@ export class HeaderComponent implements OnInit {
     this.activeSection = section; 
   }
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-  }
+  // toggleMenu() {
+  //   this.menuOpen = !this.menuOpen;
+  // }
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+
+    const burgerMenu = document.querySelector('.burger-menu');
+  
+    if (this.menuOpen) {
+      burgerMenu?.classList.add('hidden');
+    } else {
+      burgerMenu?.classList.remove('hidden');
+    }
   }
 }

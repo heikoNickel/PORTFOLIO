@@ -35,10 +35,12 @@
     </div> 
         <!-- Overlay Menü (wird von rechts reingefahren) -->
         <div class="overlay-menu" [class.active]="menuOpen">
+            <img class="logo-burger" src="./assets/img/header/logo-transparent-png.png" alt="">
             <div class="close-btn" (click)="toggleMenu()">&#10005; <!-- Das X-Symbol --> </div>
             <a [routerLink]="['/']" fragment="aboutMeLink" [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="setActiveSection('aboutMe'); toggleMenu()">{{'aboutMe' | translate }}</a>
             <a [routerLink]="['/']" fragment="skillsLink" [ngClass]="{'active': activeSection === 'skills'}" (click)="setActiveSection('skills'); toggleMenu()">Skills</a>
             <a [routerLink]="['/']" fragment="portfolioLink" [ngClass]="{'active': activeSection === 'portfolio'}" (click)="setActiveSection('portfolio'); toggleMenu()">Portfolio</a>
+            <a [routerLink]="['/']" fragment="contactLink" [ngClass]="{'active': activeSection === 'contact'}" (click)="setActiveSection('contact'); toggleMenu()">{{'contact' | translate }}</a>
             <div class="language_overlay">
                 <button (click)="translate.switchLanguage('en')" [ngClass]="{'active-language': translate.getCurrentLanguage() === 'en'}">EN</button>
                 <button (click)="translate.switchLanguage('de')" [ngClass]="{'active-language': translate.getCurrentLanguage() === 'de'}">DE</button>
