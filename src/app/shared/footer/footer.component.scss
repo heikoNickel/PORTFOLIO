@@ -72,6 +72,9 @@ footer{
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease;
+    >img{
+        cursor: pointer;
+    }
 }
 
 .wrapper-icons:hover{
