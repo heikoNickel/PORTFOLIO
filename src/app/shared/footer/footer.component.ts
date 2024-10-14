@@ -14,4 +14,8 @@ export class FooterComponent {
 
   translate = inject(TranslationService);
 
+  scrollToSection(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
+
 }
