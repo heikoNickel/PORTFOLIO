@@ -38,7 +38,8 @@ export class HeaderComponent implements OnInit {
     const sectionElement = document.getElementById(section);
     if (sectionElement) {
       window.scrollTo({
-        top: sectionElement.offsetTop - 100, 
+        // top: sectionElement.offsetTop - 100,
+        top: sectionElement.offsetTop - 0, 
         behavior: 'smooth'
       });
 
@@ -55,7 +56,7 @@ export class HeaderComponent implements OnInit {
     }
 
     const sections = document.querySelectorAll<HTMLElement>('app-about-me, app-skills, app-portfolio, app-contact');
-    const scrollPosition = window.scrollY + 100; 
+    const scrollPosition = window.scrollY + 0; 
 
  
     let foundSection = false;
