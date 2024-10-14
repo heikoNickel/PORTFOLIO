@@ -1,6 +1,6 @@
 section{
     margin: 0;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
     background-color: #141d2f;
     width: 100%;
     color: white;
@@ -137,10 +137,16 @@ h2{
     }
 }
 
-@media (max-width: 735px) {
+@media(max-width: 800px){
     h2{
-        font-size: 52px;
+        font-size: 40px;
     }
+}
+
+@media (max-width: 735px) {
+    // h2{
+    //     font-size: 52px;
+    // }
     .background-image{
         right: -400px;
     }
