@@ -14,16 +14,16 @@
             <div class="menu">
                 @if(!(router.url === '/imprint')){
                 <a [routerLink]="['/']" fragment="aboutMeLink" 
-                   [ngClass]="{'active': activeSection === 'aboutMe'}" 
-                   (click)="setActiveSection('aboutMe')">{{'aboutMe' | translate }}</a>
+                   [ngClass]="{'active': activeSection === 'aboutMeLink'}" 
+                   (click)="setActiveSection('aboutMeLink')">{{'aboutMe' | translate }}</a>
                 
                 <a [routerLink]="['/']" fragment="skillsLink" 
-                   [ngClass]="{'active': activeSection === 'skills'}" 
-                   (click)="setActiveSection('skills')">Skills</a>
+                   [ngClass]="{'active': activeSection === 'skillsLink'}" 
+                   (click)="setActiveSection('skillsLink')">Skills</a>
                 
                 <a [routerLink]="['/']" fragment="portfolioLink" 
-                   [ngClass]="{'active': activeSection === 'portfolio'}" 
-                   (click)="setActiveSection('portfolio')">Portfolio</a>
+                   [ngClass]="{'active': activeSection === 'portfolioLink'}" 
+                   (click)="setActiveSection('portfolioLink')">Portfolio</a>
                    
                 <div class="language">
                     <button (click)="translate.switchLanguage('en')" [ngClass]="{'active-language': translate.getCurrentLanguage() === 'en'}">EN</button>
