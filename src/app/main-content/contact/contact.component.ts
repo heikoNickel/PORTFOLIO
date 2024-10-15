@@ -46,7 +46,7 @@ export class ContactComponent {
     if (this.contactForm.valid) {
       const formData = this.contactForm.value;
       const formspreeUrl = 'https://formspree.io/f/xrbggpkd'; 
-      console.log('Form Submitted', this.contactForm.value);
+      // console.log('Form Submitted', this.contactForm.value);
 
       this.http.post(formspreeUrl, {
         name: formData.name,
