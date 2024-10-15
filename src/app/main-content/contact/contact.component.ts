@@ -78,7 +78,7 @@ export class ContactComponent {
     setTimeout(() => {
       this.successMessage = '';
       this.errorMessage = '';
-    }, 5000); 
+    }, 10000); 
   }
 }
   
