@@ -30,7 +30,7 @@ export class ReviewsComponent {
     {
       name: "Marvin D.",
       title: "REVIEWS.SECOND.TITLE",
-      img: "./assets/img/reviews/user.png",
+      img: "./assets/img/reviews/Marv.png",
       review: "REVIEWS.SECOND.REVIEW",
     },
     {
@@ -42,7 +42,7 @@ export class ReviewsComponent {
     {
       name: "Philipp B.",
       title: "REVIEWS.FOURTH.TITLE",
-      img: "./assets/img/reviews/user.png",
+      img: "./assets/img/reviews/Philipp.png",
       review: "REVIEWS.FOURTH.REVIEW",
     },
     {
