@@ -28,7 +28,7 @@ export class PortfolioComponent {
       img: "./assets/img/portfolio/join.png",
       skills: "Angular | TypeScript | HTML | CSS | Firebase",
       description: 'PROJECTS.JOIN.DESCRIPTION',
-      liveTestLink: "https://heiko-nickel.developerakademie.net/modul10/log_in/log_in.html",
+      liveTestLink: "https://heiko-frontend.de/join/log_in/log_in.html",
       gitHubLink: "https://github.com/heikoNickel/Join",
     },
     {
@@ -36,7 +36,7 @@ export class PortfolioComponent {
       img: "./assets/img/portfolio/pollo-loco.png",
       skills: "JavaScript | HTML | CSS",
       description: 'PROJECTS.EL_POLLO_LOCO.DESCRIPTION',
-      liveTestLink: "https://heiko-nickel.developerakademie.net/modul12/elPolloLoco/index.html",
+      liveTestLink: "https://heiko-frontend.de/elPolloLoco/",
       gitHubLink: "https://github.com/heikoNickel/elPolloLoco",
     },
     {
@@ -44,7 +44,7 @@ export class PortfolioComponent {
       img: "./assets/img/portfolio/pokedex.png",
       skills: "JavaScript | HTML | CSS | API",
       description: 'PROJECTS.POKEDEX.DESCRIPTION',
-      liveTestLink: "https://heiko-nickel.developerakademie.net/modul9/pokeDex/index.html",
+      liveTestLink: "https://heiko-frontend.de/pokedex/",
       gitHubLink: "https://github.com/heikoNickel/Pokedex",
     },
   ];
